@@ -48,8 +48,8 @@ body {
 }
 
 .borde {
-  width: 230px;
-  height: 35px;
+  width: 160px;
+  height: 25px;
   background: linear-gradient(to right, #8a3d13, #b15520, #8a3d13);
   border-radius: 8px;
   box-shadow:
@@ -59,15 +59,15 @@ body {
 }
 
 .maceta {
-  width: 190px;
-  height: 160px;
+  width: 130px;
+  height: 110px;
   background: linear-gradient(to right, #8a3d13, #b15520, #8a3d13);
-  border-bottom-left-radius: 25px;
-  border-bottom-right-radius: 25px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
   box-shadow:
     inset 0 -15px 20px rgba(0, 0, 0, 0.3),
     0 10px 15px rgba(0, 0, 0, 0.2);
-  margin-top: -2px; /* Une el borde con la base sin espacios */
+  margin-top: -2px;
 }
 
 /*-------------------------------*/
@@ -79,14 +79,9 @@ body {
 }
 
 .tallo {
-  height: 60px;
-  width: 22px;
-  background: linear-gradient(
-    to right,
-    #1f6104,
-    #3bc206,
-    #1f6104
-  ); /* Efecto cilíndrico 3D */
+  height: 45px; /* Altura reducida para no alcanzar el texto */
+  width: 16px;
+  background: linear-gradient(to right, #1f6104, #3bc206, #1f6104);
   box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3);
 }
 
@@ -101,13 +96,13 @@ body {
 
 .centro {
   background: radial-gradient(circle, #523101 30%, #301d01 90%);
-  height: 130px;
-  width: 130px;
+  height: 90px;
+  width: 90px;
   border-radius: 50%;
   box-shadow:
     inset 0 0 20px rgba(0, 0, 0, 0.8),
     0 5px 15px rgba(0, 0, 0, 0.4);
-  border: 4px solid #704905;
+  border: 3px solid #704905;
 }
 
 .petalos_logic {
@@ -124,11 +119,11 @@ body {
 .p3,
 .p4 {
   position: absolute;
-  width: 55px; /* Un poco más anchos para que se vean frondosos */
-  height: 270px;
+  width: 40px;
+  height: 190px; /* Pétalos más cortos */
   background: radial-gradient(ellipse at center, #ffee58 0%, #ffb300 100%);
   border-radius: 50%;
-  top: -70px;
+  top: -50px; /* Ajustado al nuevo tamaño del centro */
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
   border: 1px solid #ffca28;
 }
@@ -148,24 +143,21 @@ body {
 
 /*----------------------------*/
 .boton {
-  -webkit-appearance: none; /* Elimina el estilo base forzado de iOS */
+  -webkit-appearance: none;
   appearance: none;
-
-  /* Ajustes para evitar que el emoji baje a otra línea */
   width: auto;
-  min-width: 16rem;
+  min-width: 12rem; /* Botón más angosto */
   max-width: 90vw;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 8px;
-  padding: 12px 25px;
-  margin: 30px;
+  padding: 10px 20px; /* Menos relleno */
+  margin: 20px;
   border: none;
-  font-size: 1.2rem;
+  font-size: 1rem; /* Texto más pequeño */
   font-weight: bold;
   border-radius: 25px;
-  width: 16rem;
   background: linear-gradient(135deg, #ff4081, #c51162);
   color: white;
   cursor: pointer;
