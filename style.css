@@ -7,7 +7,7 @@
 
 body {
   /* Fondo suave primaveral */
-  min-height: 100vh;
+  min-height: 100dvh;
   background: linear-gradient(to bottom, #fff0f5 0%, #ffe4e1 100%);
   overflow: hidden; /* Evita scroll innecesario */
 }
@@ -140,6 +140,17 @@ body {
 
 /*----------------------------*/
 .boton {
+  -webkit-appearance: none; /* Elimina el estilo base forzado de iOS */
+  appearance: none;
+
+  /* Ajustes para evitar que el emoji baje a otra línea */
+  width: auto;
+  min-width: 16rem;
+  max-width: 90vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
   padding: 12px 25px;
   margin: 30px;
   border: none;
